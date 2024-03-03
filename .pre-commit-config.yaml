@@ -16,3 +16,7 @@ repos:
    hooks:
    - id: swiftlint
      args: [--config, .swiftlint.yml]
+-  repo: https://github.com/RandomActsOfCode/dowyi
+   rev: 0.1.0
+   hooks:
+   - id: dowyi
