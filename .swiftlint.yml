@@ -1,0 +1,6 @@
+excluded:
+  - ${PWD}/.build/
+disabled_rules:
+  - trailing_comma
+function_body_length: 60
+type_body_length: 400
