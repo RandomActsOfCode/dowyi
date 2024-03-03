@@ -1,0 +1,6 @@
+-   id: dowyi
+    name: dowyi
+    description: "Depend On What You Import - Swift Package Manifest Linter"
+    entry: dowyi
+    language: swift
+    pass_filenames: False
