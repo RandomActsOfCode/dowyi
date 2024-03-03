@@ -1,0 +1,13 @@
+{
+  "swiftExecPath" : "/usr/bin/swift",
+  "ignoredFrameworks" : [],
+  "ignoredTargets" : [],
+  "systemFrameworks" : [
+    "Foundation",
+    "SwiftUI",
+    "RegexBuilder",
+    "XCTest"
+  ],
+  "enableDebugLogging" : false,
+  "exportedImports" : []
+}
