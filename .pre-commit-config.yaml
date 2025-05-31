@@ -16,7 +16,7 @@ repos:
    - id: swiftformat
      args: [--config, .swiftformat]
 -  repo: https://github.com/realm/SwiftLint
-   rev: 0.54.0
+   rev: 0.59.1
    hooks:
    - id: swiftlint
      args: [--config, .swiftlint.yml]
