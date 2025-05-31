@@ -11,7 +11,8 @@ extension Sanitizer {
     _ package: Package,
     _ config: Configuration,
     _ logger: Logger
-  ) -> [Target] {
+  )
+    -> [Target] {
     package.targets.filter { target in
       let match = config.ignoredTargets.contains { $0.targetName == target.name }
 
@@ -33,7 +34,8 @@ extension Sanitizer {
     _ sourceImports: [SourceImport],
     _ config: Configuration,
     _ logger: Logger
-  ) -> [SourceImport] {
+  )
+    -> [SourceImport] {
     sourceImports.filter {
       guard !config.isSystem($0.module) else {
         logger.log(.debug, "Skipping import of \($0.module) - system module")

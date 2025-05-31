@@ -31,7 +31,8 @@ extension Sanitizer {
     packageImport: PackageImport,
     config: Configuration,
     logger: Logger
-  ) -> [ValidationError] {
+  )
+    -> [ValidationError] {
     var errors: [ValidationError] = []
     let targetImports = packageImport.targetImports
     let targets = Sanitizer.filterTargets(package, config, logger)
@@ -82,7 +83,8 @@ extension Sanitizer {
     file: URL,
     sourceImports: [SourceImport],
     config: Configuration
-  ) -> [Sanitizer.ValidationError] {
+  )
+    -> [Sanitizer.ValidationError] {
     guard !config.exportedImports.isEmpty else {
       return []
     }

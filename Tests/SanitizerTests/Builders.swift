@@ -10,7 +10,8 @@ import Model
 func test(
   from sourceImport: SourceImport,
   dependencies: [String]
-) -> (Package, PackageImport) {
+)
+  -> (Package, PackageImport) {
   test(from: [sourceImport], dependencies: dependencies)
 }
 
@@ -23,7 +24,8 @@ func test(
 func test(
   from sourceImports: [SourceImport],
   dependencies: [String]
-) -> (Package, PackageImport) {
+)
+  -> (Package, PackageImport) {
   let packageImport: PackageImport = .test(from: sourceImports)
   let package: Package = .test(from: packageImport, dependencies: dependencies)
   return (package, packageImport)

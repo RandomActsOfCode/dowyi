@@ -31,7 +31,8 @@ extension Sanitizer {
     packageImport: PackageImport,
     config: Configuration,
     logger: Logger
-  ) -> [ValidationError] {
+  )
+    -> [ValidationError] {
     var errors: [ValidationError] = []
     let targetImports = packageImport.targetImports
 

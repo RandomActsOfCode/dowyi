@@ -97,7 +97,8 @@ extension Target {
     using packageManifestDir: URL,
     fileSystem: FileSystem,
     logger: Logger
-  ) -> [SourceImport] {
+  )
+    -> [SourceImport] {
     var matches: [SourceImport] = []
 
     let sources = sources(
@@ -133,7 +134,8 @@ extension Target {
     using packageManifestDir: URL,
     filesystem: FileSystem,
     logger: Logger
-  ) -> [URL] {
+  )
+    -> [URL] {
     let sourceDir = resolvedSourcesDir(baseDir: packageManifestDir)
     let files = filesystem.recursiveDirectoryContent(sourceDir)
 
