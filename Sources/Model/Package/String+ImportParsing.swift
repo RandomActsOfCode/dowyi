@@ -32,6 +32,13 @@ extension String {
       OneOrMore(.whitespace)
     }
 
+    let accessModifier = ChoiceOf {
+      "public"
+      "internal"
+      "private"
+      "package"
+    }
+
     let importKindType = ChoiceOf {
       "typealias"
       "struct"
@@ -55,6 +62,10 @@ extension String {
         compilerAttribute
       }
       ZeroOrMore(.whitespace)
+      Optionally {
+        accessModifier
+        OneOrMore(.whitespace)
+      }
       "import"
       OneOrMore(.whitespace)
       importKind
