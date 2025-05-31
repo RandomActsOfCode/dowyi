@@ -57,6 +57,8 @@ extension Sanitizer {
         logger
       )
 
+      guard !sourceImports.isEmpty else { continue }
+
       for sourceImport in sourceImports {
         let dependency = target.dependencies.first { $0.name == sourceImport.module }
         guard let dependency else { continue }
