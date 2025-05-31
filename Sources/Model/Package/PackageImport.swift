@@ -165,7 +165,7 @@ extension Target {
       let path: String
 
       switch type {
-      case .executable, .regular:
+      case .executable, .macro, .regular:
         path = "Sources"
       case .test:
         path = "Tests"

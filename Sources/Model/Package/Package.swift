@@ -57,6 +57,7 @@ extension Target {
     case regular
     case test
     case executable
+    case macro
   }
 }
 
